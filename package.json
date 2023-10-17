@@ -7,7 +7,8 @@
     "test": "npx playwright test --project=chromium --workers=1",
     "test:single": "npx playwright test tests/login.spec.ts --project=chrome --headed --workers=1",
     "test:parallel": "npx playwright test tests/login.spec.ts --headed --project=chrome --workers=5",
-    "allure": "allure generate ./allure-results --clean && allure open ./allure-report"
+    "report:html": "npx playwright show-report",
+    "report:allure": "allure generate ./allure-results --clean && allure open ./allure-report"
   },
   "keywords": [],
   "author": "",
